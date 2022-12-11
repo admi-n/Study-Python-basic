@@ -1,2 +1,2 @@
 # Study-Python-basic
-学习,不会,Python,基础
+python学习 入门到放弃
