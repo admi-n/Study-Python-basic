@@ -3,8 +3,8 @@ import time
 
 WIDTH = 500
 HEIGHT = 500
-xVelocity = 3
-yVelocity = 2
+xVelocity = 1
+yVelocity = 1
 window = Tk()
 
 canvas = Canvas(window,width=WIDTH,height=HEIGHT)
@@ -22,8 +22,6 @@ image_height = photo_image.height()
 while True:
     coordinates = canvas.coords(my_image)
     print(coordinates)
-    #canvas.move(my_image,0,xVelocity)
-    #canvas.move(my_image,0,yVelocity)
     if(coordinates[0]>=(WIDTH-image_width) or coordinates[0]<0):
         xVelocity = -xVelocity
     if(coordinates[1]>=(HEIGHT-image_height) or coordinates[1]<0):
